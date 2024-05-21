@@ -1,0 +1,83 @@
+body {
+  overflow: hidden; /* Hide scrollbars */
+  font-family: monospace;
+  font-size: 81.25%;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+}
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-family: monospace;
+  color: lightslategray;
+  margin-right: 20px;
+  transition: font-size 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+a:hover {
+  font-size: 1.6rem;
+  color: black;
+}
+.search_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+}
+.google {
+  width: 400px;
+  height: 200px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_input {
+  border-radius: 25px;
+  width: 30vw;
+  height: 50px;
+  border: 5px;
+  box-shadow: 2px 2px 5px;
+  margin: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+  font-size: x-large;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-family: monospace;
+}
+.search_input:focus {
+  outline: none;
+}
+
+.search_input::placeholder {
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-align: left;
+  font-family: monospace;
+}
+.search_buttun {
+  width: 12vw;
+  height: 50px;
+  border-radius: 10px;
+  border: 5px;
+  box-shadow: 2px 2px 5px;
+  font-size: 1.5rem;
+  font-weight: 100;
+  text-align: center;
+  cursor: pointer;
+}
